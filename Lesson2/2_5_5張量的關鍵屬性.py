@@ -10,16 +10,16 @@ from keras.datasets import mnist
 
 
 ######################################################
-# print(train_images.ndim)
-# print(train_images.shape)
-# print(train_images.dtype)
+print(train_images.ndim)
+print(train_images.shape)
+print(train_images.dtype)
 
-# digit = train_images[4]
+digit = train_images[4]
 
-# import matplotlib.pyplot as plt 
-# plt.imshow(digit, cmap=plt.cm.binary)
+import matplotlib.pyplot as plt 
+plt.imshow(digit, cmap=plt.cm.binary)
 
-# plt.show()
+plt.show()
 
 
 ######################################################
@@ -38,7 +38,7 @@ from keras.datasets import mnist
 # print(my_slice.shape)
  
 ##7:-7是從頭7個元素到-7個元素，但不含-7,所以0到6和-7到-1前後各7個元素被去掉了，剩下中間的14X14像素
-my_slice = train_images[:,7:-7,7:-7] 
-print(my_slice.shape)
+# my_slice = train_images[:,7:-7,7:-7] 
+# print(my_slice.shape)
 
 

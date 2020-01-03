@@ -7,6 +7,9 @@ from keras import models
 from keras import layers
 from keras.utils import to_categorical
 
+
+
+
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
 network = models.Sequential()
@@ -33,6 +36,6 @@ train_labels = to_categorical(train_labels)
 test_labels = to_categorical(test_labels)
 
 
-network.fit(train_images, train_labels, epochs=5, batch_size=128)  #epochs:疊代層數  batch_size:批次處理
+network.fit(train_images, train_labels, epochs=5,batch_size=128)  #epochs:疊代層數  batch_size:批次處理
 test_loss, test_acc = network.evaluate(test_images, test_labels)
 print('test_acc:',test_acc)
