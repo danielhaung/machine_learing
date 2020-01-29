@@ -28,28 +28,28 @@ import numpy
 # #--------------------------------------------------------------------------------------------#
 # #矩陣取值_2  
 
-# vector = numpy.array([5,10,15,20])
+vector = numpy.array([5,10,15,20])
 
-# matrix = numpy.array([
-#             [5,10,15],
-#             [20,25,30],
-#             [35,40,45]
-#         ])
+matrix = numpy.array([
+            [5,10,15],
+            [20,25,30],
+            [35,40,45]
+        ])
 
 # print(vector[0:3])
 # print(matrix[:,1])
-# print(matrix[:,0:2])
+# print(matrix[:,0:2])    #:代表所有
 # print(matrix[1:3,0:2])
 
 
 # #--------------------------------------------------------------------------------------------#
-# #從陣列上判斷值 & 把布林值當作索引值
-# vector = numpy.array([5,10,15,20])
-# matrix = numpy.array([
-#             [5,10,15],
-#             [20,25,30],
-#             [35,40,45]
-#         ])
+#從陣列上判斷值 & 把布林值當作索引值
+vector = numpy.array([5,10,15,20])
+matrix = numpy.array([
+            [5,10,15],
+            [20,25,30],
+            [35,40,45]
+        ])
 # print(vector ==10)  #判斷是否有元素等於10  
 # print(matrix ==25)  #判斷是否有元素等於25
 
@@ -57,10 +57,10 @@ import numpy
 # equal_to_ten = (vector ==10)
 # print(equal_to_ten)
 # print(vector[equal_to_ten])  #會把True的值返回
-# #從陣列上判斷值後返回出來_2
+#從陣列上判斷值後返回出來_2
 # second_column_25 = (matrix[:,1]==25)
 # print(second_column_25)
-# print(matrix[second_column_25,:])
+# print(matrix[second_column_25,:])     #特別
 
 
 # #--------------------------------------------------------------------------------------------#

@@ -18,8 +18,8 @@ network.compile(optimizer = 'rmsprop',              #指定優化器
 
 
 #2-6轉換格式        
-train_images = train_images.reshape((60000,28*28))
-train_images = train_images.astype('float32') / 255
+train_images = train_images.reshape((60000,28*28)) #配合神經網路資料型態
+train_images = train_images.astype('float32') / 255 #把數值變為0~1
 
 test_images = test_images.reshape((10000, 28*28))
 test_images = test_images.astype('float32') / 255

@@ -11,7 +11,7 @@ import numpy as np
 # a = np.floor(10*np.random.random((3,4)))  #向下取整
 # print(a)
 # print("------弄平(flatten)矩陣--------")
-# #a shpae
+# ##a shpae
 # #弄平(flatten)矩陣
 # print(a.ravel())
 # print("------從新組合--------")
@@ -19,9 +19,16 @@ import numpy as np
 # print(a)
 # print("------轉置矩陣--------")
 # print(a.T)
-# #補充：reshape(3,-1)代表指定3行就可以確定列 寫一個-1就是自動幫你算
+# #補充：a.reshape(3,-1)代表指定3行就可以確定列 寫一個-1就是自動幫你算
+# print(a.reshape(3,-1))
 # #------------------------------------------------------------------------------#
 # #矩陣拼接
+# """floor定義:標量x的底數是最大的整數i 所以 x表示 i。
+# 例子
+# >>> a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+# >>> np.floor(a)
+# array([-2., -2., -1.,  0.,  1.,  1.,  2.])
+# """
 # a = np.floor(10*np.random.random((2,2)))
 # b = np.floor(10*np.random.random((2,2)))
 # print("-------a--------")
@@ -41,10 +48,10 @@ import numpy as np
 # print("-----------")
 # print(np.hsplit(a,(3,4)))  #在第三和第四列之後拆分
 # print("-----------")
-# a = np.floor(10*np.random.random((12,2)))
-# print(a)
-# print("----縱向切分-------")
-# print(np.vsplit(a,3))#縱向切分
+a = np.floor(10*np.random.random((12,2)))
+print(a)
+print("----縱向切分-------")
+print(np.vsplit(a,3))#縱向切分
 
 # #------------------------------------------------------------------------------#
 

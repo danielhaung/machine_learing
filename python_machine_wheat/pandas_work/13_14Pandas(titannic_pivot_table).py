@@ -4,23 +4,23 @@
 import pandas as  pd
 import numpy as np 
 titanic_survival = pd.read_csv("titanic_train.csv")
-#print(titanic_survival)
+# print(titanic_survival)
 
 # -----------------------------------------#
 age = titanic_survival["Age"]
-#print(age.loc[0:10]) 
+# print(age.loc[0:10]) 
 age_is_null = pd.isnull(age) #看是不是缺失值是的話返回True
-#print(age_is_null)
+# print(age_is_null) 
 age_null_true = age[age_is_null]  #要看缺失值在那些位置
-#print(age_null_true)
+# print(age_null_true)
 age_null_count = len(age_null_true) #看缺失值的總數
-#print(age_null_count)
+# print(age_null_count)
 
 # # -----------------------------------------#
 # #算看看平均年齡
 # mean_age = sum(titanic_survival["Age"]) / len(titanic_survival["Age"])
 # print(mean_age)
-# #nan無法顯示，因為有NaN空的數值
+#nan無法顯示，因為有NaN空的數值
  
 # # -----------------------------------------#
 # good_ages = titanic_survival["Age"][age_is_null == False]  #不帶缺失值的值
@@ -31,7 +31,7 @@ age_null_count = len(age_null_true) #看缺失值的總數
 # #也可以使用mean求均值
 # correct_mean_age = titanic_survival["Age"].mean()   #不推薦  因為其實可以把缺失值補起來用中位數 或是均值等
 # print(correct_mean_age)
-# # # -----------------------------------------#
+# # -----------------------------------------#
 # passenger_classes = [1,2,3]
 # fares_by_class ={}
 # for this_class in passenger_classes:
@@ -66,11 +66,11 @@ age_null_count = len(age_null_true) #看缺失值的總數
 # print(new_titanic_survival)
 
 # # -----------------------------------------#
-#查詢值
-row_index_83_age = titanic_survival.loc[83,"Age"]
-row_index_1000_pclass = titanic_survival.loc[776,"Pclass"]
-print(row_index_83_age)
-print(row_index_1000_pclass)
+# #查詢值
+# row_index_83_age = titanic_survival.loc[83,"Age"]
+# row_index_1000_pclass = titanic_survival.loc[776,"Pclass"]
+# print(row_index_83_age)
+# print(row_index_1000_pclass)
 
 
 

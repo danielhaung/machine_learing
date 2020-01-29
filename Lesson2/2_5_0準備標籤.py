@@ -5,7 +5,7 @@
 from keras.datasets import mnist 
 from keras import models 
 from keras import layers
-from keras.utils import to_categorical
+from keras.utils import to_categorical  #to_categorical:將類向量（整數）轉換為二進制類矩陣。
 
 
 
@@ -35,7 +35,7 @@ test_images = test_images.astype('float32') / 255
 train_labels = to_categorical(train_labels)
 test_labels = to_categorical(test_labels)
 
-
-network.fit(train_images, train_labels, epochs=5,batch_size=128)  #epochs:疊代層數  batch_size:批次處理
-test_loss, test_acc = network.evaluate(test_images, test_labels)
+#fit : 為模型訓練固定的紀元（數據集上的迭代）。
+network.fit(train_images, train_labels, epochs=5,batch_size=128)  #epochs:疊代層數  batch_size:批次處理https://keras.io/models/model/#fit
+test_loss, test_acc = network.evaluate(test_images, test_labels)    #evaluate : 返回測試模式下模型的損失值和指標值
 print('test_acc:',test_acc)
