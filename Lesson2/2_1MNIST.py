@@ -16,5 +16,5 @@ print(train_labels)
 print(test_images.shape)    #(10000, 28, 28) 測試資料
 print(len(test_labels))     #10000 標籤也有10000個(每個 test image 對應一個 test label)
 print(test_labels)  #[7 2 1 ... 4 5 6]  標籤是 0-9 之間的數字
-
+ 
 
