@@ -9,20 +9,20 @@ from keras.datasets import mnist
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
 
-######################################################
-print(train_images.ndim)
-print(train_images.shape)
-print(train_images.dtype)
+# ######################################################
+# print(train_images.ndim)
+# print(train_images.shape)
+# print(train_images.dtype)
 
-digit = train_images[4]
+# digit = train_images[500]
 
-import matplotlib.pyplot as plt 
-plt.imshow(digit, cmap=plt.cm.binary)
+# import matplotlib.pyplot as plt  #.pyplot提供類似MATLAB的繪圖框架
+# plt.imshow(digit, cmap=plt.cm.binary)   #imshow在軸上顯示圖像。cmap所有標量到RGBA映射的基類，plt.cm:內置的顏色圖。
 
-plt.show()
+# plt.show()  
 
 
-######################################################
+# ######################################################
 """
 在Numpy做張量切片Tensor Slicing
 """

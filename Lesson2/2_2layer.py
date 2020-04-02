@@ -11,3 +11,9 @@ network = models.Sequential()   #您可以Sequential通過將一系列圖層實�
 network.add(layers.Dense(512, activation='relu', input_shape=(28 * 28,)))   
 #第二層
 network.add(layers.Dense(10, activation='softmax' )) #這層可以輸出一個含有10個機率評分(probability scores)的陣列(機率總合為1)
+
+
+
+
+
+

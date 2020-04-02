@@ -12,3 +12,4 @@ network.add(layers.Dense(10, activation='softmax' ))
 network.compile(optimizer = 'rmsprop',              #指定優化器
                 loss = 'categorical_crossentropy',  #指定損失函數
                 metrics = ['accuracy'])             #指定評量準則
+
